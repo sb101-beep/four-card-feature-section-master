@@ -29,7 +29,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-  padding: 5rem 1rem;
+  margin: 5rem 1rem;
 }
 
 .header {
@@ -114,19 +114,35 @@ main {
       "header header header"
       "supervisor teambuilder calculator"
       "supervisor karma calculator";
-    grid-gap: 1.25rem;
+    grid-gap: 1.875rem;
+    margin: 4.5rem 1rem;
   }
 
   .header {
     width: 32.4375rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
   }
 
   .card {
     margin: 0px;
+    width: 21.9375rem;
+    height: 15.625rem;
   }
 
   .header {
     grid-area: header;
+
+    h2 {
+      font-size: 36px;
+      color: $veryDarkBlue;
+    }
+
+    h3 {
+      font-size: 36px;
+    }
   }
 
   .supervisor {
